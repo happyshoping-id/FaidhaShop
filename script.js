@@ -107,11 +107,24 @@ function initSmoothScroll() {
       const targetElement = document.querySelector(targetId);
 
       if (targetElement) {
-        const offsetTop = targetElement.offsetTop - 70; // Offset untuk navbar fixed
-        window.scrollTo({
-          top: offsetTop,
-          behavior: 'smooth'
-        });
+        // Cek apakah mobile menu sedang terbuka
+        const navLinks = document.querySelector('.nav-links');
+        const isMobileMenuOpen = navLinks && navLinks.classList.contains('active');
+
+        const doScroll = () => {
+          const offsetTop = targetElement.offsetTop - 70; // Offset untuk navbar fixed
+          window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+          });
+        };
+
+        if (isMobileMenuOpen) {
+          // Tunggu menu tertutup & overflow reset sebelum scroll
+          setTimeout(doScroll, 450);
+        } else {
+          doScroll();
+        }
       }
     });
   });
