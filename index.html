@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- ========== Meta Tags ========== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dapur Cemilan - Jajanan rumahan lezat, fresh, dan tanpa pengawet. Pesan sekarang untuk cemilan homemade berkualitas!">
+  <meta name="keywords" content="jajanan rumahan, cemilan homemade, kue tradisional, snack fresh, jajanan pasar">
+  <title>Dapur Cemilan — Jajanan Rumahan Lezat & Fresh</title>
+
+  <!-- ========== Google Fonts (Poppins) ========== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- ========== Stylesheet ========== -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================
+       NAVBAR - Navigasi utama website
+       ======================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <!-- Logo / Brand -->
+      <a href="#home" class="navbar-brand" id="brand-logo">
+        <span class="brand-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"/><path d="M2 21h20"/><path d="M7 8v2"/><path d="M12 8v2"/><path d="M17 8v2"/><path d="M7 4h.01"/><path d="M12 4h.01"/><path d="M17 4h.01"/></svg></span>
+        Faida Shop
+      </a>
+
+      <!-- Menu Navigasi -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="active" id="nav-home">Home</a></li>
+        <li><a href="#produk" id="nav-produk">Produk</a></li>
+        <li><a href="#tentang" id="nav-tentang">Tentang</a></li>
+        <li><a href="#testimoni" id="nav-testimoni">Testimoni</a></li>
+        <li><a href="#kontak" id="nav-kontak">Kontak</a></li>
+        <li><a href="#kontak" class="nav-cta" id="nav-pesan">Pesan Sekarang</a></li>
+      </ul>
+
+      <!-- Hamburger Menu (Mobile) -->
+      <div class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <!-- Overlay untuk mobile menu -->
+    <div class="nav-overlay" id="nav-overlay"></div>
+  </nav>
+
+  <!-- ========================================
+       HERO SECTION - Bagian utama halaman
+       ======================================== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <!-- Konten teks hero -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 23c-3.866 0-7-3.134-7-7 0-2.812 1.5-5.312 3.5-7.5.458-.501 1.042-.401 1.25.25.5 1.5 1.25 2.25 1.25 2.25s1-3.5 3-6c.373-.468.977-.39 1.15.15C15.9 7.4 16.5 8.5 16.5 8.5s.5-.75 1-2c.2-.5.7-.6 1.05-.2C20.27 8.32 21 11.25 21 13.5 21 18.5 17.5 23 12 23z"/></svg> Fresh Setiap Hari — Tanpa Pengawet
+        </div>
+
+        <h1 class="hero-title">
+          Jajanan Rumahan<br>
+          <span>Lezat & Fresh</span><br>
+          Setiap Hari
+        </h1>
+
+        <p class="hero-desc">
+          Nikmati aneka cemilan homemade yang dibuat dari bahan pilihan,
+          diolah dengan penuh cinta, dan diantar fresh langsung ke rumahmu.
+        </p>
+
+        <!-- Tombol CTA -->
+        <div class="hero-buttons">
+          <a href="#produk" class="btn-primary" id="cta-lihat-produk">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Lihat Produk
+          </a>
+          <a href="#kontak" class="btn-secondary" id="cta-hubungi">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Hubungi Kami
+          </a>
+        </div>
+
+        <!-- Statistik kecil -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Pelanggan Puas</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Varian Produk</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> 4.9</div>
+            <div class="stat-label">Rating</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gambar hero -->
+      <div class="hero-image">
+        <img src="images/hero-bg.png" alt="Aneka jajanan rumahan lezat dari Dapur Cemilan" id="hero-img">
+        
+        <!-- Badge dekoratif -->
+        <div class="hero-image-badge">
+          <span class="badge-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 0l2.5 7.5L22 10l-7.5 2.5L12 20l-2.5-7.5L2 10l7.5-2.5L12 0z"/><path d="M5 2l1 3 3 1-3 1-1 3-1-3-3-1 3-1 1-3z" opacity=".6"/><path d="M19 16l1 3 3 1-3 1-1 3-1-3-3-1 3-1 1-3z" opacity=".6"/></svg></span>
+          <div>
+            <div class="badge-text">100% Homemade</div>
+            <div class="badge-subtext">Dibuat fresh setiap hari</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       SECTION PRODUK - Daftar produk jajanan
+       ======================================== -->
+  <section class="products" id="produk">
+    <div class="container">
+      <!-- Judul section -->
+      <h2 class="section-title reveal">Produk Kami</h2>
+      <p class="section-subtitle reveal" data-delay="100">
+        Aneka pilihan jajanan rumahan yang dibuat fresh setiap hari
+        dengan bahan berkualitas dan tanpa pengawet.
+      </p>
+
+      <!-- Filter kategori -->
+      <div class="product-filters reveal" data-delay="200">
+        <button class="filter-btn active" id="filter-semua">Semua</button>
+        <button class="filter-btn" id="filter-gorengan">Gorengan</button>
+        <button class="filter-btn" id="filter-kue">Kue & Roti</button>
+        <button class="filter-btn" id="filter-tradisional">Tradisional</button>
+      </div>
+
+      <!-- Grid produk -->
+      <div class="products-grid">
+
+        <!-- Produk 1: Risoles Mayo -->
+        <div class="product-card reveal" data-delay="100" id="product-risoles">
+          <div class="product-image">
+            <img src="images/risoles.png" alt="Risoles Mayo Ragout - Dapur Cemilan">
+            <span class="product-badge">Best Seller</span>
+            <button class="product-love" id="love-risoles"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Gorengan</div>
+            <h3 class="product-name">Risoles Mayo Ragout</h3>
+            <p class="product-desc">Risoles renyah berisi ragout sayuran krim lezat dengan saus mayo spesial.</p>
+            <div class="product-bottom">
+              <div class="product-price">Rp 5.000 <small>Rp 7.000</small></div>
+              <button class="btn-cart" id="cart-risoles"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Tambah</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 2: Klepon -->
+        <div class="product-card reveal" data-delay="200" id="product-klepon">
+          <div class="product-image">
+            <img src="images/klepon.png" alt="Klepon Gula Merah - Dapur Cemilan">
+            <span class="product-badge">Favorit</span>
+            <button class="product-love" id="love-klepon"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Tradisional</div>
+            <h3 class="product-name">Klepon Gula Merah</h3>
+            <p class="product-desc">Klepon pandan lembut dengan isian gula merah leleh dan taburan kelapa parut.</p>
+            <div class="product-bottom">
+              <div class="product-price">Rp 3.000 <small>Rp 5.000</small></div>
+              <button class="btn-cart" id="cart-klepon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Tambah</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 3: Pastel Goreng -->
+        <div class="product-card reveal" data-delay="300" id="product-pastel">
+          <div class="product-image">
+            <img src="images/pastel.png" alt="Pastel Goreng Sayur - Dapur Cemilan">
+            <button class="product-love" id="love-pastel"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Gorengan</div>
+            <h3 class="product-name">Pastel Goreng Sayur</h3>
+            <p class="product-desc">Kulit renyah berlapis berisi wortel, bihun, telur, dan ayam suwir yang gurih.</p>
+            <div class="product-bottom">
+              <div class="product-price">Rp 4.000</div>
+              <button class="btn-cart" id="cart-pastel"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Tambah</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 4: Brownies Panggang -->
+        <div class="product-card reveal" data-delay="100" id="product-brownies">
+          <div class="product-image">
+            <img src="images/brownies.png" alt="Brownies Panggang Coklat - Dapur Cemilan">
+            <span class="product-badge">Premium</span>
+            <button class="product-love" id="love-brownies"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Kue &amp; Roti</div>
+            <h3 class="product-name">Brownies Panggang Coklat</h3>
+            <p class="product-desc">Brownies coklat fudgy dengan topping keju dan dark chocolate premium.</p>
+            <div class="product-bottom">
+              <div class="product-price">Rp 25.000 <small>Rp 30.000</small></div>
+              <button class="btn-cart" id="cart-brownies"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Tambah</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 5: Pisang Goreng Crispy -->
+        <div class="product-card reveal" data-delay="200" id="product-pisang">
+          <div class="product-image">
+            <img src="images/pisang-goreng.png" alt="Pisang Goreng Crispy - Dapur Cemilan">
+            <button class="product-love" id="love-pisang"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Gorengan</div>
+            <h3 class="product-name">Pisang Goreng Crispy</h3>
+            <p class="product-desc">Pisang raja pilihan dibalut tepung crispy renyah. Cocok dengan saus coklat!</p>
+            <div class="product-bottom">
+              <div class="product-price">Rp 3.500</div>
+              <button class="btn-cart" id="cart-pisang"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Tambah</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produk 6: Kue Lapis Legit -->
+        <div class="product-card reveal" data-delay="300" id="product-lapis">
+          <div class="product-image">
+            <img src="images/kue-lapis.png" alt="Kue Lapis Legit - Dapur Cemilan">
+            <span class="product-badge">Spesial</span>
+            <button class="product-love" id="love-lapis"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          </div>
+          <div class="product-info">
+            <div class="product-category">Tradisional</div>
+            <h3 class="product-name">Kue Lapis Legit</h3>
+            <p class="product-desc">Kue lapis tradisional bertekstur lembut dengan aroma rempah khas Nusantara.</p>
+            <div class="product-bottom">
+              <div class="product-price">Rp 35.000 <small>Rp 45.000</small></div>
+              <button class="btn-cart" id="cart-lapis"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Tambah</button>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.products-grid -->
+    </div>
+  </section>
+
+  <!-- ========================================
+       SECTION TENTANG KAMI
+       ======================================== -->
+  <section class="about" id="tentang">
+    <div class="container">
+      <!-- Gambar tentang kami -->
+      <div class="about-image reveal">
+        <img src="images/hero-bg.png" alt="Tentang Dapur Cemilan - Jajanan rumahan homemade">
+      </div>
+
+      <!-- Konten tentang kami -->
+      <div class="about-content">
+        <h2 class="section-title reveal">Tentang Kami</h2>
+        <p class="section-subtitle reveal" data-delay="100">
+          Dapur Cemilan berdiri sejak 2020, berawal dari hobi memasak di dapur rumah
+          yang kini telah menjadi bisnis jajanan rumahan terpercaya. Kami percaya bahwa
+          makanan homemade adalah yang terbaik — dibuat dengan resep turun-temurun
+          dan bahan-bahan segar pilihan.
+        </p>
+
+        <!-- Keunggulan -->
+        <div class="about-features reveal" data-delay="200">
+          <div class="about-feature">
+            <span class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+            <div class="feature-text">
+              <h4>100% Homemade</h4>
+              <p>Dibuat di dapur rumah dengan penuh cinta</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <span class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66L7 18"/><path d="M17 8c-5.5 0-8.27 5.33-8.27 5.33"/><path d="M17 8C17 1 10 0 10 0s0 7 7 8z"/></svg></span>
+            <div class="feature-text">
+              <h4>Tanpa Pengawet</h4>
+              <p>Murni bahan alami, aman dikonsumsi</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <span class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 23c-3.866 0-7-3.134-7-7 0-2.812 1.5-5.312 3.5-7.5.458-.501 1.042-.401 1.25.25.5 1.5 1.25 2.25 1.25 2.25s1-3.5 3-6c.373-.468.977-.39 1.15.15C15.9 7.4 16.5 8.5 16.5 8.5s.5-.75 1-2c.2-.5.7-.6 1.05-.2C20.27 8.32 21 11.25 21 13.5 21 18.5 17.5 23 12 23z"/></svg></span>
+            <div class="feature-text">
+              <h4>Fresh Setiap Hari</h4>
+              <p>Dimasak pagi, diantar siang hari</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <span class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+            <div class="feature-text">
+              <h4>Harga Terjangkau</h4>
+              <p>Kualitas premium, harga bersahabat</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#kontak" class="btn-primary reveal" data-delay="300" id="about-cta">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Kenalan Yuk!
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       SECTION TESTIMONI - Ulasan pelanggan
+       ======================================== -->
+  <section class="testimonials" id="testimoni">
+    <div class="container">
+      <h2 class="section-title reveal">Apa Kata Mereka?</h2>
+      <p class="section-subtitle reveal" data-delay="100">
+        Ulasan jujur dari pelanggan setia Dapur Cemilan yang sudah mencoba
+        dan jatuh cinta dengan jajanan rumahan kami.
+      </p>
+
+      <div class="testimonials-grid">
+        <!-- Testimoni 1 -->
+        <div class="testimonial-card reveal" data-delay="100" id="testimonial-1">
+          <div class="testimonial-stars"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+          <p class="testimonial-text">
+            "Risoles-nya juara banget! Renyah di luar, isian ragoutnya creamy dan berlimpah.
+            Anak-anak di rumah langsung minta tambah terus. Pasti repeat order!"
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SN</div>
+            <div>
+              <div class="testimonial-name">Siti Nurhaliza</div>
+              <div class="testimonial-role">Ibu Rumah Tangga</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimoni 2 -->
+        <div class="testimonial-card reveal" data-delay="200" id="testimonial-2">
+          <div class="testimonial-stars"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+          <p class="testimonial-text">
+            "Brownies-nya moist banget dan coklatnya berasa premium. Saya pesan untuk acara
+            kantor dan semua orang suka. Packagingnya juga rapi dan cantik!"
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">BA</div>
+            <div>
+              <div class="testimonial-name">Budi Andika</div>
+              <div class="testimonial-role">Karyawan Swasta</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimoni 3 -->
+        <div class="testimonial-card reveal" data-delay="300" id="testimonial-3">
+          <div class="testimonial-stars"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="#FFD700" stroke="#FFD700" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+          <p class="testimonial-text">
+            "Langganan klepon sama kue lapis dari Dapur Cemilan sudah 2 tahun. Rasanya
+            konsisten enak dan yang paling penting tanpa pengawet. Recommended banget!"
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">DP</div>
+            <div>
+              <div class="testimonial-name">Dewi Puspita</div>
+              <div class="testimonial-role">Pelanggan Setia</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       SECTION KONTAK - Informasi kontak
+       ======================================== -->
+  <section class="contact" id="kontak">
+    <div class="container">
+      <h2 class="section-title reveal">Hubungi Kami</h2>
+      <p class="section-subtitle reveal" data-delay="100">
+        Mau pesan jajanan atau tanya-tanya dulu? Langsung hubungi kami ya!
+        Kami siap melayani pesanan Anda setiap hari.
+      </p>
+
+      <!-- Grid kartu kontak -->
+      <div class="contact-grid">
+        <!-- WhatsApp -->
+        <div class="contact-card reveal" data-delay="100" id="contact-wa">
+          <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+          <h3>WhatsApp</h3>
+          <p>0877-3922-7477</p>
+          <p>Respon cepat setiap hari!</p>
+        </div>
+
+        <!-- Alamat -->
+        <div class="contact-card reveal" data-delay="200" id="contact-alamat">
+          <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <h3>Alamat</h3>
+          <p>Jl. Cemilan Bahagia No. 42</p>
+          <p>Jakarta Selatan, 12345</p>
+        </div>
+
+        <!-- Jam Operasional -->
+        <div class="contact-card reveal" data-delay="300" id="contact-jam">
+          <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <h3>Jam Operasional</h3>
+          <p>Senin — Sabtu</p>
+          <p>08:00 — 20:00 WIB</p>
+        </div>
+      </div>
+
+      <!-- Tombol WhatsApp besar -->
+      <div class="contact-cta reveal" data-delay="400">
+        <a href="https://wa.me/6287739227477?text=Halo%20Dapur%20Cemilan!%20Saya%20ingin%20pesan%20jajanan"
+           target="_blank"
+           class="btn-whatsapp"
+           id="cta-whatsapp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Chat via WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================
+       FOOTER
+       ======================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"/><path d="M2 21h20"/><path d="M7 8v2"/><path d="M12 8v2"/><path d="M17 8v2"/><path d="M7 4h.01"/><path d="M12 4h.01"/><path d="M17 4h.01"/></svg> Faida Shop
+      </div>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram" id="social-ig"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="#" aria-label="TikTok" id="social-tiktok"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></a>
+        <a href="#" aria-label="Facebook" id="social-fb"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== Container untuk notifikasi toast ========== -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- ========== Floating Cart Button ========== -->
+  <div class="cart-float" id="cart-float">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+    <span class="cart-count" id="cart-count">0</span>
+  </div>
+
+  <!-- ========== Script ========== -->
+  <script src="script.js"></script>
+</body>
+</html>
